@@ -40,7 +40,7 @@ public class TrecoMapper {
             d.setCategoria(new TrecoResponseDTO.SimpleRef(t.getCategoria().getId(),t.getCategoria().getNome()));
         }
         if (t.getMarca() != null){
-            d.setMarca(new TrecoResponseDTO.SimpleRef((t.getMarca().getId(),t.getMarca().getNome()));
+            d.setMarca(new TrecoResponseDTO.SimpleRef(t.getMarca().getId(), t.getMarca().getNome()));
         }
         return d;
     }
